@@ -72,20 +72,6 @@ public class StudentHogwartsServise {
         }
     }
 
-    public void compareStudentSlytherin(StudentSlytherin first, StudentSlytherin second) {
-        int firstSumm = first.getCunning() + first.getDetermination() + first.getAmbition() + first.getThirstPower();
-        int secondSumm = second.getCunning() + second.getDetermination() + second.getAmbition() + second.getThirstPower();
-
-        if (firstSumm > secondSumm) {
-            int delta = firstSumm - secondSumm;
-            System.out.println(first.getName() + " Сумма силы магии = " + firstSumm + " больше чем у " + second.getName() + " = " + secondSumm + " на " + delta + " едениц");
-        } else if (firstSumm == secondSumm) {
-            System.out.println(first.getName() + " Сумма силы магии = " + firstSumm + " одинакова с  " + second.getName() + " = " + secondSumm + " едениц");
-        } else {
-            int delta = secondSumm - firstSumm;
-            System.out.println(second.getName() + " Сумма силы магии = " + secondSumm + " больше чем у " + first.getName() + " = " + firstSumm + " на " + delta + " едениц");
-        }
-    }
 
     //-//-//-//-
 }
